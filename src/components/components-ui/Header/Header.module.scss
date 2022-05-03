@@ -1,0 +1,209 @@
+.nav {
+	font-size: 20px;
+}
+.btn {
+	height: 32px;
+	line-height: 1.3;
+	display: inline-block;
+	text-align: center;
+	border: solid 2px #000;
+	width: 100%;
+	max-width: 150px;
+	color: #fff;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
+	background-color: #4958dd;
+    border: 1px solid #4958dd;
+	margin-top: 15px;
+}
+.transaction-area p {
+	margin: 0 0 30px;
+    color: #170d69;
+    font-family: "Nunito";
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 22px;
+	padding: 0;
+    text-align: center;
+}
+.transaction-area img {
+	max-height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.transaction-area .btn {
+	display: block;
+	margin: 0 auto 0;
+}
+.btn.for-sale {
+	height: 40px;
+}
+.btn:hover {
+	background-color: #2a3cd7;
+	border: 1px solid #2a3cd7;
+	color: #fff;
+}
+.btn:focus {
+	color: #fff;
+}
+.btn svg {
+	margin-right: 5px;
+	margin-bottom: -2px;
+}
+.btn.for-sale svg {
+	display: none;
+}
+.header {
+	font-size: 14px;
+	height: 64px;
+	width: 1400px;
+	padding: 0 40px;
+	border-bottom: 1px solid #e8e8e8;
+	margin: 0 auto 20px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.logo {
+	height: 42px;
+	display: block;
+	margin-right: 50px;
+	cursor: pointer;
+}
+.header ul li {
+	display: inline-block;
+	height: 100%;
+	line-height: 64px;
+}
+.header ul li svg {
+	margin-right: 5px;
+	margin-bottom: -2px;
+}
+.header ul li a {
+	display: block;
+	padding: 0 20px;
+}
+.header ul {
+	height: 100%;
+}
+.header ul li.active {
+	color: #dc1fff;
+	position: relative;
+}
+.header ul li.active:before {
+	content: '';
+	position: absolute;
+	background-color: #dc1fff;
+	width: 100%;
+	height: 2px;
+	left: 0;
+	bottom: -1px;
+}
+.header ul li.coming-soon {
+	color: rgba(0,0,0,.25);
+	cursor: no-drop;
+	padding: 0 20px;
+}
+.header .wallet-btn {
+	margin-left: auto;
+	height: 100%;
+}
+.wallet-popup-wrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 400px;
+	right: -100%;
+	-webkit-transition: right .2s;
+	-moz-transition: right .2s;
+	-ms-transition: right .2s;
+	transition: right .2s;
+	z-index: 2;
+	background-color: #fff;
+}
+.popup-overlay {
+	background-color: rgba(0,0,0,.45);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	display: none;
+}
+.popup-overlay.shown {
+	display: block;
+}
+.wallet-popup-wrapper.opened {
+	right: 0;
+}
+@media only screen and (max-width : 1199px) {
+	.header {
+		width: 970px;
+	}
+}
+@media only screen and (max-width : 991px) {
+	.header {
+		width: 750px;
+	}
+}
+@media only screen and (max-width : 767px) {
+	.header {
+		width: auto;
+	}
+	.header ul li.coming-soon {
+		display: none;
+	}
+	.banner h1 {
+		font-size: 26px;
+		line-height: 36px;
+	}
+	.banner .desc {
+		font-size: 14px;
+	}
+	.header .wallet-btn .btn-connected {
+		padding-right: 0;
+	}
+}
+@media only screen and (max-width : 480px) {
+	.wallet-popup-wrapper {
+		width: 100%;
+	}
+	.header .wallet-btn .btn-connected-wrapper:before {
+		display: none;
+	}
+	.header ul li.active:before {
+		display: none;
+	}
+	.header .wallet-btn .btn-connected-wrapper {
+		width: 120px;
+	}
+	.header .wallet-btn .btn-connected {
+		text-align: right;
+	}
+	.header .wallet-btn {
+		text-align: right;
+	}
+	.header {
+		padding: 0 15px;
+	}
+	.logo {
+		margin-right: 10px;
+	}
+	
+}
+@media only screen and (max-width : 480px) {
+	.header {
+		margin-bottom: 0;
+	}
+}
