@@ -1,0 +1,50 @@
+.btn {
+    border-radius: 38px;
+    cursor: pointer;
+    max-width: 100%;
+    transition: 0.25s all;
+    text-transform: uppercase;
+    width: 170px;
+    height: 38px;
+    border: 0;
+    font-size: 13px;
+    display: block;
+
+    &.btnPrimary {
+        background-color: #4958dd;
+        color: #fff;
+    
+        &:hover {
+            background-color: #2a3cd7;
+        }
+    }
+    
+    &.btnSecondary {
+        background-color: #53ff98;
+        color: #212529;
+
+        &:hover {
+            background-color: #2fff82;
+        }
+    }
+
+    &Dropdown {
+        margin: 8px 16px;
+    }
+
+    &Form {
+        height: 50px;
+        font-weight: 600;
+        flex-grow: 1.7;
+
+        @media only screen and (max-width : 1199px) {
+            width: 100%;
+        }
+    }
+
+    &NftList {
+        width: 90%;
+        margin: 0 auto;
+        transform: translateY(18px);
+    }
+}

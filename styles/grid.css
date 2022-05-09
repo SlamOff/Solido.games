@@ -634,3 +634,44 @@
       margin-left: 0;
     }
   }
+
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .row {
+    margin: 0 -15px;
+  }
+  .row:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+  @media (min-width: 320px) {
+    .container {
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      margin: 0 auto;
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      margin: 0 auto;
+      width: 1170px;
+    }
+  }
+  @media (min-width: 1360px) {
+    .container {
+      margin: 0 auto;
+      width: 85%;
+    }
+  }

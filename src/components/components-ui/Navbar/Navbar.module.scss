@@ -1,0 +1,97 @@
+.nav {
+  margin-left: auto;
+  
+  @media only screen and (max-width : 1199px) {
+    display: none;
+  }
+
+  &Mob {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    padding: 0 15px 15px;
+    background-color: #000;
+
+    @media only screen and (max-width : 1199px) {
+      display: block;
+    }
+
+    .navItem {
+      display: block;
+      padding: 8px 15px;
+      width: 970px;
+      margin: 0 auto;
+
+      @media only screen and (max-width : 991px) {
+        width: 750px;
+      }
+      
+      @media only screen and (max-width : 767px) {
+        width: 100%;
+        padding: 8px 0;
+      }
+    }
+  }
+
+	&Item {
+		display: inline-block;
+		color: #53ff98;
+		font-size: 13px;
+		text-transform: uppercase;
+		transition: color 0.15s ease-in-out;
+		cursor: pointer;
+		user-select: none;
+    padding: 0 16px;
+
+		@media only screen and (max-width : 1500px) {
+			padding: 0 10px;
+		}
+
+		@media only screen and (max-width : 1365px) {
+			padding: 0 8px;
+			font-size: 12px;
+		}
+
+		@media only screen and (max-width : 1199px) {
+			padding: 0 6px;
+		}
+
+		&:hover {
+			color: #4958dd;
+		}
+
+		a {
+			color: #53ff98;
+			user-select: none;
+			display: block;
+			padding: 8px 0;
+			text-decoration: none;
+			transition: color 0.15s ease-in-out;
+
+			&:hover {
+				color: #4958dd;
+			}
+		}
+	}
+
+	.dropdownNavItem {
+		position: relative;
+
+		span {
+			padding: 8px 0;
+			display: inline-block;
+
+			&:after {
+				display: inline-block;
+				margin-left: 0.255em;
+				vertical-align: 0.255em;
+				content: "";
+				border-top: 0.3em solid;
+				border-right: 0.3em solid transparent;
+				border-bottom: 0;
+				border-left: 0.3em solid transparent;
+			}
+		}
+	}
+}

@@ -34,16 +34,16 @@ export const getStaticProps = async (ctx: any) => {
   }
 };
 
-const NFTPage = ({nft}: any) => {
+const NFTSinglePage = ({nft}: any) => {
   return (
     <>
       <div className='container'>
           <div className='row'>
-              <NFTItem nft={nft} />
+              <NFTItem isSinglePage={true} nft={nft} />
           </div>
       </div>
     </>
   );
 };
 
-export default NFTPage;
+export default NFTSinglePage;

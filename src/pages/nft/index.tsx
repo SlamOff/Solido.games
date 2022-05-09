@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styles from './NFT.module.scss';
 import NFTItem from '../../components/components-ui/NFTItem';
+import { Title } from '../../components/components-ui/Title';
 import Link from 'next/link';
 
 export const getStaticProps = async () => {
@@ -21,16 +22,16 @@ export const getStaticProps = async () => {
   }
 };
 
-const Page = ({nfts}: any) => {
+const NFTPage = ({nfts}: any) => {
   return (
     <>
       <div className='container'>
-        <h1>Game NFT Marketplace</h1>
-        <h2> Collection</h2>
+        <Title text='Game NFT Marketplace' level={1} />
+        <Title text='MASD Collection' level={2} />
         <div className={'row ' + styles.list}>
           {nfts && nfts.map((item: any) => (
             <Link href={`/nft/${item.id}`} key={item.id}>
-              <div className='col-md-3'>
+              <div className='col-sm-6 col-md-4 col-lg-3'>
                 <NFTItem nft={item} />
               </div>
             </Link>
@@ -41,4 +42,4 @@ const Page = ({nfts}: any) => {
   );
 }
 
-export default Page;
+export default NFTPage;

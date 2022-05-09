@@ -1,9 +1,8 @@
 import * as React from 'react';
 import { useAccount } from 'wagmi';
-
+import { Title } from '../components/components-ui/Title';
 
 import {
-  Account,
   Approve,
   Deposit,
   Withdraw,
@@ -15,14 +14,17 @@ import {
 import { useIsMounted } from '../hooks';
 
 function Page() {
-  const isMounted = useIsMounted();
-  const { data } = useAccount();
+  // const isMounted = useIsMounted();
+  // const { data } = useAccount();
 
   return (
     <>
-      {isMounted && data && (
+      <div className='container'>
+        <Title text='Home Page' level={1} />
+      </div>
+      {/* {isMounted && data && (
         <>
-          {/* <>
+          <>
             <Connect />
             <Account />
             <NetworkSwitcher />
@@ -31,9 +33,9 @@ function Page() {
             <Withdraw />
             <Repay />
             <Borrow />
-          </> */}
+          </>
         </>
-      )}
+      )} */}
     </>
   );
 }

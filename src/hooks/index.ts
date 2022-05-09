@@ -1,1 +1,2 @@
-export { useIsMounted } from './useIsMounted'
+export { useIsMounted } from './useIsMounted';
+export { useOutsideClick } from './useOutsideClick';
